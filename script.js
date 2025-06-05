@@ -6,6 +6,7 @@ function sayHello() {
     intro.style.fontWeight = "bold";
     intro.style.marginTop = "20px";
   }
+  
 }
 
 // Nhạc nền tự động lặp lại
