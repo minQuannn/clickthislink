@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: url("img/hehehe.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Overlay nền mờ */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 0;
+}
+
+/* Popup chỉnh to hơn */
+.popup {
+  background: linear-gradient(145deg, #16222a, #3a6073);
+  color: white;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  width: 450px;
+  
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  font-size: 16px;
+}
+
+.popup img {
+  width: 250px; /* to hơn */
+  max-width: 100%;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.popup h2 {
+  margin: 10px 0 5px;
+}
+
+.popup p {
+  font-size: 18px;
+  color: #eee;
+}
+
+.popup button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #4fc3f7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
