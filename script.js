@@ -6,7 +6,6 @@ function sayHello() {
     intro.style.fontWeight = "bold";
     intro.style.marginTop = "20px";
   }
-  alert("Xin chào từ JavaScript!");
 }
 
 // Nhạc nền tự động lặp lại
