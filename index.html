@@ -1,20 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Liu Liu Liu</title>
+  <title>LiuLiuLiu</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Nhạc nền (chưa tự phát, sẽ phát sau khi nhấn OK) -->
+  <audio id="bgMusic" loop>
+    <source src="panto-clowns-jingle-271283.mp3" type="audio/mpeg" />
+    Trình duyệt của bạn không hỗ trợ thẻ audio.
+  </audio>
+
+  <!-- Popup -->
   <div class="popup">
     <img src="img/quanque.jpg" alt="quanque" />
     <h2>Hẹ Hẹ Hẹ!</h2>
-    <p>Nhấn vào nút OK để nhận được 1 trịu đô nheeeee:333</p>
+    <p>Nhấn vào nút OK để nhận được phần quà 1 trịu đô nheeeee:333</p>
     <p id="intro"></p>
     <button onclick="sayHello()">OK</button>
   </div>
 
+  <!-- Canvas cho hiệu ứng confetti -->
+  <canvas id="confetti-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 100;"></canvas>
+
+  <!-- Script chính -->
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </body>
 </html>

@@ -64,3 +64,42 @@ body::before {
   font-weight: bold;
   font-size: 15px;
 }
+
+/* CSS bóng bay */
+.balloon {
+  position: fixed;
+  bottom: -60px;
+  width: 30px;
+  height: 40px;
+  border-radius: 50% 50% 45% 45%;
+  background-color: pink;
+  z-index: 1000;
+  opacity: 0.9;
+  animation: riseUp 7s linear forwards;
+  pointer-events: none;
+}
+
+.balloon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  width: 2px;
+  height: 20px;
+  background-color: #444;
+  transform: translateX(-50%);
+}
+
+@keyframes riseUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
+
+
+
